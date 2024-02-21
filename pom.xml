@@ -72,15 +72,15 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.heroku.api/heroku-api -->
 		<dependency>
-			<groupId>com.heroku.api</groupId>
-			<artifactId>heroku-api</artifactId>
-			<version>0.46</version>
+			<groupId>com.heroku.agent</groupId>
+			<artifactId>heroku-java-metrics-agent</artifactId>
+			<version>4.0.2</version>
 		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-			<plugin>				
+			<plugin>
 				<groupId>org.asciidoctor</groupId>
 				<artifactId>asciidoctor-maven-plugin</artifactId>
 				<version>2.2.1</version>
@@ -117,6 +117,11 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+    <groupId>com.heroku.sdk</groupId>
+    <artifactId>heroku-maven-plugin</artifactId>
+    <version>3.0.7</version>
+</plugin>
 		</plugins>
 	</build>
 

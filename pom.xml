@@ -70,6 +70,12 @@
 			<artifactId>spring-restdocs-mockmvc</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.heroku.api/heroku-api -->
+		<dependency>
+			<groupId>com.heroku.api</groupId>
+			<artifactId>heroku-api</artifactId>
+			<version>0.46</version>
+		</dependency>
 	</dependencies>
 
 	<build>

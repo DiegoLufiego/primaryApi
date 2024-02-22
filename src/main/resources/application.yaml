@@ -1,0 +1,19 @@
+server:
+  port: 8085
+  
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/factandstock
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Rafaela$12 
+#  jpa:
+#    database-platform: org.hibernate.dialect.MYSQL5Dialect
+#    hibernate:
+#      ddl-auto: update
+#spring.jpa.hibernate.dialect=org.hibernate.dialect.MYSQL5InnoDBDialect
+#spring.jpa.hibernate.ddl-auto=update
+    
+
+

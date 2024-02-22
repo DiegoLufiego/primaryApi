@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.kopek.stockAndSales.apiModels.UsersSQL;
 import com.kopek.stockAndSales.dtos.Dato;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,7 +25,8 @@ public class ApiController {
 
 	@GetMapping("/")
 	public List<Dato> listAll() {
-		listaDatos.add(new Dato(1, "Diegggggoooooo"));
+		
+		listaDatos.add(new Dato(new UsersSQL().nextUserID(), "Diegggggoooooo"));
 		return this.listaDatos;
 	}
 
